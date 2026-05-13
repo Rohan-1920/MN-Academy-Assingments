@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Student Registration Form</title>
+</head>
+<body>
+
+<h1 align="center">Student Registration Form</h1>
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+  
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <label for="fullName">Full Name</label><br />
+    <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
+    <br /><br />
+
+    <label for="fatherName">Father Name</label><br />
+    <input type="text" id="fatherName" name="fatherName" placeholder="Enter father's name" required />
+    <br /><br />
+
+    <label for="email">Email</label><br />
+    <input type="email" id="email" name="email" placeholder="example@email.com" required />
+    <br /><br />
+
+    <label for="password">Password</label><br />
+    <input type="password" id="password" name="password" placeholder="Create a strong password" required />
+    <br /><br />
+
+    <label for="phone">Phone Number</label><br />
+    <input type="tel" id="phone" name="phone" placeholder="03XX-XXXXXXX" required />
+    <br /><br />
+
+    <label for="dob">Date of Birth</label><br />
+    <input type="date" id="dob" name="dob" required />
+    <br /><br />
+
+    <label>Gender</label><br />
+    <input type="radio" id="genderMale" name="gender" value="male" required />
+    <label for="genderMale">Male</label>
+    &nbsp;&nbsp;
+    <input type="radio" id="genderFemale" name="gender" value="female" />
+    <label for="genderFemale">Female</label>
+    <br /><br />
+
+    <label for="city">City</label><br />
+    <select id="city" name="city" required>
+      <option value="">Select your city</option>
+      <option value="karachi">Karachi</option>
+      <option value="lahore">Lahore</option>
+      <option value="islamabad">Islamabad</option>
+    </select>
+    <br /><br />
+
+    <label for="profilePic">Profile Picture</label><br />
+    <input type="file" id="profilePic" name="profilePic" accept="image/*" />
+    <br /><br />
+  </fieldset>
+
+  <br />
+
+  
+  <fieldset>
+    <legend>Skills</legend>
+
+    <label>Choose skills you know</label><br /><br />
+
+    <input type="checkbox" id="skillHtml" name="skills" value="html" />
+    <label for="skillHtml">Rohan Majeed</label>
+    <br />
+
+    <input type="checkbox" id="skillCss" name="skills" value="css" />
+    <label for="skillCss">CSS</label>
+    <br />
+
+    <input type="checkbox" id="skillJs" name="skills" value="javascript" />
+    <label for="skillJs">JavaScript</label>
+    <br /><br />
+  </fieldset>
+
+  <br />
+
+  
+  <fieldset>
+    <legend>Message / Comments</legend>
+
+    <label for="message">Message</label><br />
+    <textarea id="message" name="message" rows="5" cols="50" placeholder="Write your message or comments here..." required></textarea>
+    <br /><br />
+  </fieldset>
+
+  <br />
+
+  <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>

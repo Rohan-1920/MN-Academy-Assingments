@@ -1,0 +1,102 @@
+/* Assignment 9 - CSS Box Styling (Chapter 13) */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Verdana, sans-serif;
+  background-color: #e8eef4;
+  min-height: 100vh;
+}
+
+/* Bonus: Flexbox - center cards on page */
+.cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+.page-title {
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+/* Bonus: 2 cards side by side */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.profile-card {
+  width: 280px;
+  text-align: center;
+
+  /* 1. Border */
+  border: 2px dashed #3b82f6;
+
+  /* 2. Padding */
+  padding: 1.5rem;
+
+  /* 3. Margin */
+  margin: 1rem;
+
+  /* 4. Background Color */
+  background-color: #f8fafc;
+
+  /* 5. Border Radius */
+  border-radius: 16px;
+
+  /* 6. Box Shadow (Optional) */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 3px solid #93c5fd;
+}
+
+.profile-card h2 {
+  color: #1f2937;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.profile-card p {
+  color: #4b5563;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.profile-btn {
+  display: inline-block;
+  padding: 0.6rem 1.25rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+
+/* Bonus: Hover effect on button */
+.profile-btn:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}

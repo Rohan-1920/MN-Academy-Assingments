@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MN Tech Academy - Learn Web Development</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <div class="container header-inner">
+      <p class="logo">MN Tech Academy</p>
+      <nav aria-label="Main navigation">
+        <ul class="nav-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <h1>Learn Web Development</h1>
+        <p>Start your coding journey today! Build real websites with HTML, CSS, and JavaScript.</p>
+        <a href="#courses" class="btn btn-primary">Explore Courses</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Web Development</h2>
+        <p>
+          <strong>Web development</strong> is the process of building websites and web applications
+          that run in a browser. It combines <em>structure</em>, <em>design</em>, and <em>interactivity</em>
+          to create useful digital experiences for users around the world.
+          <br /><br />
+          At MN Tech Academy, students learn how to write clean <strong>HTML</strong> for content,
+          style pages with <strong>CSS</strong>, and add behavior using <strong>JavaScript</strong>.
+          <em>Practice and projects</em> help you grow from beginner to job-ready developer.
+        </p>
+        <hr />
+        <p>
+          Whether you want to become a <strong>front-end developer</strong>, improve your
+          <em>design skills</em>, or launch your own portfolio site, web development is a
+          valuable skill in today's digital world.<br />
+          Join our courses and start building your future on the web!
+        </p>
+      </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+      <div class="container">
+        <h2>Our Courses</h2>
+        <div class="course-grid">
+
+          <article class="course-card">
+            <h3>HTML</h3>
+            <p>Learn the building blocks of the web. Create headings, paragraphs, links, images, forms, and semantic page structure.</p>
+            <a href="#contact" class="btn btn-secondary">Enroll Now</a>
+          </article>
+
+          <article class="course-card">
+            <h3>CSS</h3>
+            <p>Style your websites with colors, fonts, layouts, flexbox, and responsive design for all screen sizes.</p>
+            <a href="#contact" class="btn btn-secondary">Enroll Now</a>
+          </article>
+
+          <article class="course-card">
+            <h3>JavaScript</h3>
+            <p>Add interactivity with variables, functions, events, and DOM manipulation to make pages dynamic.</p>
+            <a href="#contact" class="btn btn-secondary">Enroll Now</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Student Registration Form -->
+    <section id="contact" class="registration">
+      <div class="container">
+        <h2>Student Registration</h2>
+        <form action="#" method="post" class="reg-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a secure password" required />
+          </div>
+
+          <fieldset class="form-group">
+            <legend>Gender</legend>
+            <label><input type="radio" name="gender" value="male" required /> Male</label>
+            <label><input type="radio" name="gender" value="female" /> Female</label>
+            <label><input type="radio" name="gender" value="other" /> Other</label>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="city">City</label>
+            <select id="city" name="city" required>
+              <option value="">Select your city</option>
+              <option value="karachi">Karachi</option>
+              <option value="lahore">Lahore</option>
+              <option value="islamabad">Islamabad</option>
+              <option value="rawalpindi">Rawalpindi</option>
+              <option value="multan">Multan</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message or questions here..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Students Table -->
+    <section class="students-table-section">
+      <div class="container">
+        <h2>Enrolled Students</h2>
+        <table class="students-table">
+          <caption class="sr-only">List of enrolled students with course details</caption>
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Course</th>
+              <th scope="col">Timing</th>
+              <th scope="col">Fee</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Ali Ahmed</td>
+              <td>HTML</td>
+              <td>Morning (9 AM - 11 AM)</td>
+              <td>Rs. 5,000</td>
+            </tr>
+            <tr>
+              <td>Sara Khan</td>
+              <td>CSS</td>
+              <td>Evening (4 PM - 6 PM)</td>
+              <td>Rs. 6,000</td>
+            </tr>
+            <tr>
+              <td>Usman Raza</td>
+              <td>JavaScript</td>
+              <td>Afternoon (2 PM - 4 PM)</td>
+              <td>Rs. 8,000</td>
+            </tr>
+            <tr>
+              <td>Fatima Noor</td>
+              <td>HTML</td>
+              <td>Weekend (Sat 10 AM - 1 PM)</td>
+              <td>Rs. 5,500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Image & Link Section -->
+    <section class="resources">
+      <div class="container resources-inner">
+        <figure>
+          <img src="images/coding-classroom.svg" alt="Students learning web development in a classroom" width="400" height="260" />
+          <figcaption>Learn coding with MN Tech Academy</figcaption>
+        </figure>
+        <p>
+          Want more free tutorials?
+          <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener noreferrer">Visit MDN Web Docs (opens in new tab)</a>
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 MN Tech Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Saffron Kitchen — Fresh food, warm atmosphere, and unforgettable flavors." />
+  <title>Saffron Kitchen | Restaurant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="navbar__logo">
+        <span class="navbar__icon" aria-hidden="true">🍽️</span>
+        Saffron Kitchen
+      </a>
+
+      <nav class="navbar__nav" aria-label="Main navigation">
+        <ul class="navbar__menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ==================== HERO ==================== -->
+    <section id="home" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__tagline">Welcome to</p>
+          <h1 class="hero__title">Taste the Magic of <span>Homemade</span> Flavors</h1>
+          <p class="hero__text">
+            Fresh ingredients, authentic recipes, and a cozy dining experience.
+            Discover our chef's special dishes made with love every day.
+          </p>
+          <a href="#menu" class="btn btn--primary">View Our Menu</a>
+        </div>
+
+        <div class="hero__image">
+          <img src="images/hero-food.svg" alt="A colorful platter of restaurant food" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== MENU ==================== -->
+    <section id="menu" class="menu">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-header__tag">Our Specialties</p>
+          <h2 class="section-header__title">Menu</h2>
+          <p class="section-header__text">
+            Hand-picked dishes prepared fresh daily. Prices in PKR.
+          </p>
+        </header>
+
+        <div class="menu__grid">
+
+          <article class="menu-card">
+            <img src="images/pizza.svg" alt="Margherita Pizza" class="menu-card__img" />
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Margherita Pizza</h3>
+              <p class="menu-card__desc">Classic tomato sauce, mozzarella, and fresh basil on a crispy crust.</p>
+              <p class="menu-card__price">Rs. 1,200</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img src="images/burger.svg" alt="Classic Beef Burger" class="menu-card__img" />
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Classic Beef Burger</h3>
+              <p class="menu-card__desc">Juicy beef patty with lettuce, cheese, and our signature sauce.</p>
+              <p class="menu-card__price">Rs. 850</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img src="images/pasta.svg" alt="Creamy Alfredo Pasta" class="menu-card__img" />
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Creamy Alfredo Pasta</h3>
+              <p class="menu-card__desc">Penne pasta in rich parmesan cream sauce with herbs.</p>
+              <p class="menu-card__price">Rs. 950</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img src="images/salad.svg" alt="Garden Fresh Salad" class="menu-card__img" />
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Garden Fresh Salad</h3>
+              <p class="menu-card__desc">Mixed greens, cherry tomatoes, cucumber, and lemon dressing.</p>
+              <p class="menu-card__price">Rs. 550</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img src="images/dessert.svg" alt="Chocolate Lava Cake" class="menu-card__img" />
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Chocolate Lava Cake</h3>
+              <p class="menu-card__desc">Warm chocolate cake with a molten center, served with vanilla ice cream.</p>
+              <p class="menu-card__price">Rs. 650</p>
+            </div>
+          </article>
+
+          <article class="menu-card">
+            <img src="images/drink.svg" alt="Fresh Mango Smoothie" class="menu-card__img" />
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Fresh Mango Smoothie</h3>
+              <p class="menu-card__desc">Blended ripe mangoes with yogurt and a touch of honey.</p>
+              <p class="menu-card__price">Rs. 400</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section id="contact" class="contact">
+      <div class="container contact__inner">
+        <header class="section-header section-header--light">
+          <p class="section-header__tag">Get in Touch</p>
+          <h2 class="section-header__title">Contact Us</h2>
+          <p class="section-header__text">
+            Have a question or want to book a table? Send us a message.
+          </p>
+        </header>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">🍽️ Saffron Kitchen</p>
+      <p class="footer__text">123 Food Street, Karachi &bull; Open Daily 11 AM – 11 PM</p>
+      <p class="footer__copy">&copy; 2026 Saffron Kitchen. Assignment 12 — MN Tech Academy.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

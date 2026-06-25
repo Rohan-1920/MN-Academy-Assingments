@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Salad">
+  <ellipse cx="100" cy="145" rx="78" ry="24" fill="#6c757d"/>
+  <ellipse cx="100" cy="138" rx="70" ry="20" fill="#e9ecef"/>
+  <circle cx="70" cy="110" r="18" fill="#2a9d8f"/>
+  <circle cx="100" cy="95" r="20" fill="#52b788"/>
+  <circle cx="130" cy="108" r="17" fill="#40916c"/>
+  <circle cx="85" cy="125" r="14" fill="#95d5b2"/>
+  <circle cx="118" cy="122" r="13" fill="#b7e4c7"/>
+  <ellipse cx="100" cy="80" rx="8" ry="12" fill="#e63946" transform="rotate(-20 100 80)"/>
+  <ellipse cx="115" cy="88" rx="7" ry="10" fill="#e63946" transform="rotate(15 115 88)"/>
+</svg>

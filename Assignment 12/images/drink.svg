@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Drink">
+  <rect x="70" y="50" width="60" height="110" rx="8" fill="#90e0ef" opacity="0.5"/>
+  <rect x="74" y="54" width="52" height="100" rx="6" fill="#48cae4"/>
+  <rect x="85" y="35" width="30" height="20" rx="4" fill="#caf0f8"/>
+  <circle cx="100" cy="90" r="12" fill="#ffd166" opacity="0.8"/>
+  <circle cx="88" cy="110" r="8" fill="#ffd166" opacity="0.6"/>
+  <rect x="60" y="160" width="80" height="10" rx="5" fill="#6c757d"/>
+  <line x1="100" y1="35" x2="100" y2="20" stroke="#adb5bd" stroke-width="4" stroke-linecap="round"/>
+</svg>

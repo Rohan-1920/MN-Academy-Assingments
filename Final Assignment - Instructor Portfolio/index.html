@@ -1,0 +1,766 @@
+<!-- Reference: https://www.pinterest.com/pin/full-stack-developer-portfolio-design/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Instructor Name — Senior Web Development Instructor at MN Tech Academy. Portfolio showcasing teaching experience, skills, and projects." />
+  <title>Instructor Name | Full Stack Instructor Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== SIDEBAR NAV (Desktop) ==================== -->
+  <aside class="sidebar" aria-label="Sidebar navigation">
+    <a href="#home" class="sidebar__brand" aria-label="Go to home">
+      <span class="sidebar__brand-icon" aria-hidden="true">IN</span>
+    </a>
+
+    <nav class="sidebar__nav" aria-label="Main navigation">
+      <ul class="sidebar__menu">
+        <li>
+          <a href="#home" class="sidebar__link sidebar__link--active">
+            <i class="fa-solid fa-house" aria-hidden="true"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="sidebar__link">
+            <i class="fa-solid fa-user" aria-hidden="true"></i>
+            <span>About</span>
+          </a>
+        </li>
+        <li>
+          <a href="#skills" class="sidebar__link">
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+            <span>Skills</span>
+          </a>
+        </li>
+        <li>
+          <a href="#experience" class="sidebar__link">
+            <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+            <span>Experience</span>
+          </a>
+        </li>
+        <li>
+          <a href="#education" class="sidebar__link">
+            <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+            <span>Education</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="sidebar__link">
+            <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#services" class="sidebar__link">
+            <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+            <span>Services</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="sidebar__link">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- ==================== MOBILE BOTTOM NAV ==================== -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <ul class="mobile-nav__list">
+      <li>
+        <a href="#home" class="mobile-nav__link mobile-nav__link--active" aria-label="Home">
+          <i class="fa-solid fa-house" aria-hidden="true"></i>
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#about" class="mobile-nav__link" aria-label="About">
+          <i class="fa-solid fa-user" aria-hidden="true"></i>
+          <span>About</span>
+        </a>
+      </li>
+      <li>
+        <a href="#skills" class="mobile-nav__link" aria-label="Skills">
+          <i class="fa-solid fa-code" aria-hidden="true"></i>
+          <span>Skills</span>
+        </a>
+      </li>
+      <li>
+        <a href="#projects" class="mobile-nav__link" aria-label="Projects">
+          <i class="fa-solid fa-folder-open" aria-hidden="true"></i>
+          <span>Projects</span>
+        </a>
+      </li>
+      <li>
+        <a href="#contact" class="mobile-nav__link" aria-label="Contact">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          <span>Contact</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="main-wrapper">
+
+    <main>
+
+      <!-- ==================== HERO ==================== -->
+      <section id="home" class="hero">
+        <div class="container hero__inner">
+          <article class="hero__card card">
+            <img src="images/instructor-profile.png" alt="Instructor profile photo" class="hero__avatar" width="170" height="227" />
+            <h1 class="hero__name">Instructor Name</h1>
+            <p class="hero__title">Senior Web Development Instructor</p>
+            <p class="hero__intro">
+              Passionate educator at MN Tech Academy with 5+ years of experience teaching
+              HTML, CSS, JavaScript, and React. Helping students build real-world skills
+              and launch successful tech careers across Pakistan.
+            </p>
+
+            <div class="hero__social" aria-label="Social media links">
+              <a href="#" class="hero__social-link" aria-label="LinkedIn profile">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="hero__social-link" aria-label="GitHub profile">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="hero__social-link" aria-label="Twitter profile">
+                <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="#" class="hero__social-link" aria-label="YouTube channel">
+                <i class="fa-brands fa-youtube" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <a href="#" class="btn btn--primary" download aria-label="Download curriculum vitae">
+              <i class="fa-solid fa-download" aria-hidden="true"></i>
+              Download CV
+            </a>
+          </article>
+
+          <div class="hero__heading" aria-hidden="true">
+            <p class="hero__script">f</p>
+            <h2 class="hero__display">
+              <span class="hero__display-line">Full Stack</span>
+              <span class="hero__display-line hero__display-line--accent">Instructor</span>
+            </h2>
+            <p class="hero__tagline">Teaching the next generation of developers</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== ABOUT ==================== -->
+      <section id="about" class="about section">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-header__tag">Who I Am</p>
+            <h2 class="section-header__title">About Me</h2>
+            <p class="section-header__text">
+              Educator, mentor, and lifelong learner helping students build real-world web development skills.
+            </p>
+          </header>
+
+          <div class="about__layout">
+            <article class="about__content card">
+              <div class="about__intro">
+                <p class="about__eyebrow">Senior Web Development Instructor</p>
+                <h3 class="about__headline">Making code accessible for every learner</h3>
+                <p class="about__lead">
+                  I am a dedicated web development instructor at <strong>MN Tech Academy</strong>,
+                  based in Karachi, Pakistan. With over five years of combined industry and
+                  teaching experience, I specialize in making complex programming concepts
+                  accessible to beginners and intermediate learners alike.
+                </p>
+              </div>
+
+              <blockquote class="about__highlight">
+                <i class="fa-solid fa-quote-left about__highlight-icon" aria-hidden="true"></i>
+                <p>
+                  My teaching philosophy centers on hands-on learning — every lesson includes
+                  practical exercises, real projects, and constructive feedback.
+                </p>
+              </blockquote>
+
+              <div class="about__body">
+                <p>
+                  I have mentored hundreds of students who have gone on to build portfolios,
+                  land internships, and start freelance careers. Before joining MN Tech Academy
+                  full-time, I worked as a front-end developer building responsive web
+                  applications for local startups.
+                </p>
+                <p>
+                  That industry background keeps my curriculum current with modern tools and
+                  best practices. When I am not in the classroom, I contribute to open-source
+                  education resources, run weekend coding workshops in Lahore, and continuously
+                  update my skills in React, Node.js, and cloud deployment platforms.
+                </p>
+              </div>
+
+              <ul class="about__pills" aria-label="Professional highlights">
+                <li class="about__pill">
+                  <i class="fa-solid fa-users" aria-hidden="true"></i>
+                  500+ Students Mentored
+                </li>
+                <li class="about__pill">
+                  <i class="fa-solid fa-code" aria-hidden="true"></i>
+                  Full Stack Focus
+                </li>
+                <li class="about__pill">
+                  <i class="fa-solid fa-handshake" aria-hidden="true"></i>
+                  Project-Based Learning
+                </li>
+              </ul>
+            </article>
+
+            <aside class="about__sidebar card" aria-label="Personal information">
+              <h3 class="about__sidebar-title">At a Glance</h3>
+
+              <ul class="about__info">
+                <li class="about__info-item">
+                  <span class="about__info-icon" aria-hidden="true">
+                    <i class="fa-solid fa-user"></i>
+                  </span>
+                  <div class="about__info-text">
+                    <span class="about__info-label">Name</span>
+                    <span class="about__info-value">Instructor Name</span>
+                  </div>
+                </li>
+                <li class="about__info-item">
+                  <span class="about__info-icon" aria-hidden="true">
+                    <i class="fa-solid fa-location-dot"></i>
+                  </span>
+                  <div class="about__info-text">
+                    <span class="about__info-label">Location</span>
+                    <span class="about__info-value">Karachi, Pakistan</span>
+                  </div>
+                </li>
+                <li class="about__info-item">
+                  <span class="about__info-icon" aria-hidden="true">
+                    <i class="fa-solid fa-briefcase"></i>
+                  </span>
+                  <div class="about__info-text">
+                    <span class="about__info-label">Experience</span>
+                    <span class="about__info-value">5+ Years</span>
+                  </div>
+                </li>
+                <li class="about__info-item">
+                  <span class="about__info-icon" aria-hidden="true">
+                    <i class="fa-solid fa-envelope"></i>
+                  </span>
+                  <div class="about__info-text">
+                    <span class="about__info-label">Email</span>
+                    <a href="mailto:instructor@mntechacademy.pk" class="about__info-value about__info-link">instructor@mntechacademy.pk</a>
+                  </div>
+                </li>
+                <li class="about__info-item">
+                  <span class="about__info-icon" aria-hidden="true">
+                    <i class="fa-solid fa-chalkboard"></i>
+                  </span>
+                  <div class="about__info-text">
+                    <span class="about__info-label">Organization</span>
+                    <span class="about__info-value">MN Tech Academy</span>
+                  </div>
+                </li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SKILLS ==================== -->
+      <section id="skills" class="skills section">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-header__tag">What I Know</p>
+            <h2 class="section-header__title">Skills</h2>
+          </header>
+
+          <div class="skills__grid">
+            <article class="skills__card card">
+              <h3 class="skills__card-title">
+                <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
+                Technical Skills
+              </h3>
+              <ul class="skills__list">
+                <li class="skill-tag">HTML5 &amp; Semantic Markup</li>
+                <li class="skill-tag">CSS3, Flexbox &amp; Grid</li>
+                <li class="skill-tag">JavaScript (ES6+)</li>
+                <li class="skill-tag">React.js &amp; Hooks</li>
+                <li class="skill-tag">Node.js &amp; Express</li>
+                <li class="skill-tag">Git &amp; GitHub</li>
+                <li class="skill-tag">Responsive Web Design</li>
+                <li class="skill-tag">REST APIs &amp; JSON</li>
+                <li class="skill-tag">Figma &amp; UI Basics</li>
+                <li class="skill-tag">Vercel &amp; Netlify Deployment</li>
+              </ul>
+            </article>
+
+            <article class="skills__card card">
+              <h3 class="skills__card-title">
+                <i class="fa-solid fa-star" aria-hidden="true"></i>
+                Professional Skills
+              </h3>
+              <ul class="skills__list">
+                <li class="skill-tag skill-tag--soft">Curriculum Development</li>
+                <li class="skill-tag skill-tag--soft">Classroom Management</li>
+                <li class="skill-tag skill-tag--soft">Student Mentorship</li>
+                <li class="skill-tag skill-tag--soft">Public Speaking</li>
+                <li class="skill-tag skill-tag--soft">Project-Based Learning</li>
+                <li class="skill-tag skill-tag--soft">Code Review &amp; Feedback</li>
+                <li class="skill-tag skill-tag--soft">Team Collaboration</li>
+                <li class="skill-tag skill-tag--soft">Problem Solving</li>
+                <li class="skill-tag skill-tag--soft">Time Management</li>
+                <li class="skill-tag skill-tag--soft">Technical Documentation</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== EXPERIENCE ==================== -->
+      <section id="experience" class="experience section">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-header__tag">My Journey</p>
+            <h2 class="section-header__title">Experience</h2>
+          </header>
+
+          <div class="timeline">
+            <article class="timeline__item card">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <span class="timeline__date">2026 — Present</span>
+                <h3 class="timeline__role">Senior Web Development Instructor</h3>
+                <p class="timeline__company">MN Tech Academy — Karachi</p>
+                <p class="timeline__desc">
+                  Lead instructor for the Full Stack Web Development program. Design and
+                  deliver curriculum covering HTML, CSS, JavaScript, and React. Conduct
+                  weekly code reviews, mentor capstone projects, and maintain a 95% student
+                  satisfaction rate across cohorts.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__item card">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <span class="timeline__date">Apr2026 — present</span>
+                <h3 class="timeline__role">Full StackWeb Development Trainee</h3>
+                <p class="timeline__company">Auj Computer Institute — Karachi</p>
+                <p class="timeline__desc">
+                  Taught foundational web development courses to beginner students.
+                  Created interactive slide decks, coding exercises, and assessment rubrics.
+                  Introduced Git workflows and collaborative project practices to the curriculum.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__item card">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <span class="timeline__date">2017 — 2019</span>
+                <h3 class="timeline__role">Front-End Developer</h3>
+                <p class="timeline__company">Apexcify Technology — Internship</p>
+                <p class="timeline__desc">
+                  Built responsive websites and web applications for local business clients.
+                  Worked with HTML, CSS, JavaScript, and React. Collaborated with designers
+                  and back-end developers in an agile team environment.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline__item card">
+              <div class="timeline__marker" aria-hidden="true"></div>
+              <div class="timeline__content">
+                <span class="timeline__date">2016 — 2017</span>
+                <h3 class="timeline__role">Freelance Web Developer</h3>
+                <p class="timeline__company">Self-Employed — Karachi</p>
+                <p class="timeline__desc">
+                  Delivered custom websites for small businesses and personal brands.
+                  Managed client communication, project timelines, and deployment.
+                  This experience shaped my practical, project-first teaching approach.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== EDUCATION ==================== -->
+      <section id="education" class="education section">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-header__tag">Academic Background</p>
+            <h2 class="section-header__title">Education</h2>
+          </header>
+
+          <div class="education__grid">
+            <article class="education__item card">
+              <div class="education__icon" aria-hidden="true">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+              <div class="education__body">
+                <span class="education__year">2013 — 2017</span>
+                <h3 class="education__degree">Bachelor of Science in Computer Science</h3>
+                <p class="education__school">University of Karachi</p>
+                <p class="education__desc">
+                  Focused on software engineering, data structures, and web technologies.
+                  Graduated with honors. Final year project: a student management web portal.
+                </p>
+              </div>
+            </article>
+
+            <article class="education__item card">
+              <div class="education__icon" aria-hidden="true">
+                <i class="fa-solid fa-school"></i>
+              </div>
+              <div class="education__body">
+                <span class="education__year">2011 — 2013</span>
+                <h3 class="education__degree">Intermediate in Pre-Engineering</h3>
+                <p class="education__school">Adamjee Government Science College, Karachi</p>
+                <p class="education__desc">
+                  Strong foundation in mathematics and physics. Developed early interest
+                  in computing and programming through college computer lab sessions.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <h3 class="education__cert-heading">Certifications</h3>
+          <div class="cert-grid">
+            <article class="cert-card">
+              <span class="cert-card__number" aria-hidden="true">01</span>
+              <h4 class="cert-card__title">Meta Front-End Developer</h4>
+              <p class="cert-card__issuer">Coursera / Meta — 2022</p>
+            </article>
+            <article class="cert-card">
+              <span class="cert-card__number" aria-hidden="true">02</span>
+              <h4 class="cert-card__title">JavaScript Algorithms &amp; Data Structures</h4>
+              <p class="cert-card__issuer">freeCodeCamp — 2021</p>
+            </article>
+            <article class="cert-card">
+              <span class="cert-card__number" aria-hidden="true">03</span>
+              <h4 class="cert-card__title">Responsive Web Design</h4>
+              <p class="cert-card__issuer">freeCodeCamp — 2020</p>
+            </article>
+            <article class="cert-card">
+              <span class="cert-card__number" aria-hidden="true">04</span>
+              <h4 class="cert-card__title">Teaching Web Development</h4>
+              <p class="cert-card__issuer">MN Tech Academy — 2021</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== PROJECTS ==================== -->
+      <section id="projects" class="projects section">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-header__tag">My Work</p>
+            <h2 class="section-header__title">Projects &amp; Achievements</h2>
+            <p class="section-header__text">
+              Selected teaching projects and academy initiatives I have led or contributed to.
+            </p>
+          </header>
+
+          <div class="projects__grid">
+            <article class="project-card card">
+              <img src="images/project-student-portal.svg" alt="Student portal dashboard preview" class="project-card__img" />
+              <div class="project-card__body">
+                <h3 class="project-card__title">Devhub-Eccommerce Website</h3>
+                <p class="project-card__desc">
+                  This is my Assignment Eccommerce website , built using HTML, CSS, and JavaScript. It is a modern, clean, and fully responsive designed to work smoothly on all screen sizes, including mobile, tablet, and desktop.
+                </p>
+                <ul class="project-card__tags" aria-label="Technologies used">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>Local Storage</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card card">
+              <img src="images/project-curriculum.svg" alt="Curriculum builder interface preview" class="project-card__img" />
+              <div class="project-card__body">
+                <h3 class="project-card__title">portfolio_card
+                </h3>
+                <p class="project-card__desc">
+                  About
+Just built an Editable Developer Profile Card with Live Preview & Theme Customizer using pure HTML, CSS, and JavaScript. This project allows users to:  Enter their personal details. Instantly preview changes in a dynamic profile card. Customize colors, fonts, and theme (Dark/Light mode)  Enable animations and effects.
+                </p>
+                <ul class="project-card__tags" aria-label="Technologies used">
+                  <li>React</li>
+                  <li>CSS Grid</li>
+                  <li>Firebase</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card card">
+              <img src="images/project-react-workshop.svg" alt="React workshop materials preview" class="project-card__img" />
+              <div class="project-card__body">
+                <h3 class="project-card__title">MN Academy 3Days Workshop Series</h3>
+                <p class="project-card__desc">
+                  Successfully completed the 3-day workshop at MN Academy, gaining valuable insights and hands-on learning experience.
+                  Grateful for the opportunity to learn from experienced mentors and enhance my skills through practical sessions.
+                  
+                
+
+                </p>
+                <ul class="project-card__tags" aria-label="Technologies used">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card card">
+              <img src="images/project-bootcamp.svg" alt="Coding bootcamp landing page preview" class="project-card__img" />
+              <div class="project-card__body">
+                <h3 class="project-card__title">Eccommerce Website</h3>
+                <p class="project-card__desc">
+                  I took on my first major project by developing a complete e-commerce website using HTML and CSS. Despite being fairly new to coding, my passion for learning and challenge-driven mindset motivated me to create something impactful rather than opting for a smaller assignment. This project allowed me to explore the fundamentals of web design, user experience, and responsive layouts, significantly boosting my technical skills. It was an exciting and rewarding journey, marking a key milestone in my learning as a developer.
+                </p>
+                <ul class="project-card__tags" aria-label="Technologies used">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>Flexbox</li>
+                  <li>Responsive</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SERVICES ==================== -->
+      <section id="services" class="services section">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-header__tag">What I Offer</p>
+            <h2 class="section-header__title">Services</h2>
+            <p class="section-header__text">
+              Professional teaching and mentoring services for students, schools, and organizations.
+            </p>
+          </header>
+
+          <div class="services__grid">
+            <article class="service-card card">
+              <div class="service-card__icon" aria-hidden="true">
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+              <h3 class="service-card__title">Classroom Instruction</h3>
+              <p class="service-card__desc">
+                Structured in-person and online classes covering the full web development
+                stack from HTML basics to React applications.
+              </p>
+            </article>
+
+            <article class="service-card card">
+              <div class="service-card__icon" aria-hidden="true">
+                <i class="fa-solid fa-user-graduate"></i>
+              </div>
+              <h3 class="service-card__title">1-on-1 Mentorship</h3>
+              <p class="service-card__desc">
+                Personalized guidance for students working on portfolios, preparing for
+                interviews, or tackling challenging coding problems.
+              </p>
+            </article>
+
+            <article class="service-card card">
+              <div class="service-card__icon" aria-hidden="true">
+                <i class="fa-solid fa-book-open"></i>
+              </div>
+              <h3 class="service-card__title">Curriculum Design</h3>
+              <p class="service-card__desc">
+                Custom course outlines, lesson plans, and assessment frameworks tailored
+                to your institution's goals and student level.
+              </p>
+            </article>
+
+            <article class="service-card card">
+              <div class="service-card__icon" aria-hidden="true">
+                <i class="fa-solid fa-people-group"></i>
+              </div>
+              <h3 class="service-card__title">Corporate Workshops</h3>
+              <p class="service-card__desc">
+                Short intensive workshops for teams learning modern front-end tools,
+                responsive design, or version control with Git.
+              </p>
+            </article>
+
+            <article class="service-card card">
+              <div class="service-card__icon" aria-hidden="true">
+                <i class="fa-solid fa-code-branch"></i>
+              </div>
+              <h3 class="service-card__title">Code Review Sessions</h3>
+              <p class="service-card__desc">
+                Detailed feedback on student or junior developer code with best-practice
+                recommendations for readability and performance.
+              </p>
+            </article>
+
+            <article class="service-card card">
+              <div class="service-card__icon" aria-hidden="true">
+                <i class="fa-solid fa-video"></i>
+              </div>
+              <h3 class="service-card__title">Recorded Tutorials</h3>
+              <p class="service-card__desc">
+                High-quality video lessons and walkthroughs for asynchronous learning,
+                available through MN Tech Academy's online platform.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== CONTACT ==================== -->
+      <section id="contact" class="contact section">
+        <div class="container">
+          <header class="section-header">
+            <p class="section-header__tag">Get In Touch</p>
+            <h2 class="section-header__title">Contact Me</h2>
+          </header>
+
+          <div class="contact__grid">
+            <div class="contact__info card">
+              <h3 class="contact__info-title">Let's Connect</h3>
+              <p class="contact__info-text">
+                Whether you are a student, fellow educator, or organization looking for
+                a web development instructor — I would love to hear from you.
+              </p>
+
+              <ul class="contact__details">
+                <li>
+                  <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                  <div>
+                    <span class="contact__label">Email</span>
+                    <a href="mailto:instructor@mntechacademy.pk">instructor@mntechacademy.pk</a>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                  <div>
+                    <span class="contact__label">Phone</span>
+                    <a href="tel:+923001234567">+92 300 1234567</a>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                  <div>
+                    <span class="contact__label">Location</span>
+                    <span>Karachi, Pakistan</span>
+                  </div>
+                </li>
+                <li>
+                  <i class="fa-solid fa-clock" aria-hidden="true"></i>
+                  <div>
+                    <span class="contact__label">Availability</span>
+                    <span>Mon — Fri, 9:00 AM — 6:00 PM PKT</span>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="contact__social" aria-label="Social media links">
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+              </div>
+            </div>
+
+            <form class="contact__form card" action="#" method="post" aria-label="Contact form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="How can I help?" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">
+                <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="footer__cta">
+        <div class="container footer__cta-inner">
+          <div class="footer__cta-text">
+            <h2 class="footer__cta-title">Ready to Start Learning?</h2>
+            <p class="footer__cta-desc">
+              Join MN Tech Academy and build your web development career with expert guidance.
+            </p>
+          </div>
+          <a href="#contact" class="btn btn--white">Enroll Now</a>
+        </div>
+      </div>
+
+      <div class="container footer__main">
+        <div class="footer__brand">
+          <span class="footer__logo">IN</span>
+          <p class="footer__tagline">Instructor Name — Full Stack Web Development Instructor at MN Tech Academy.</p>
+        </div>
+
+        <nav class="footer__links" aria-label="Footer quick links">
+          <h3 class="footer__heading">Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__social-block">
+          <h3 class="footer__heading">Follow Me</h3>
+          <div class="footer__social" aria-label="Social media links">
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <div class="container">
+          <p>&copy; 2026 Instructor Name. All rights reserved. Built for MN Tech Academy Final Assignment.</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

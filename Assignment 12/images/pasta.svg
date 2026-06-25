@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Pasta">
+  <ellipse cx="100" cy="145" rx="75" ry="22" fill="#6c757d"/>
+  <ellipse cx="100" cy="138" rx="68" ry="18" fill="#adb5bd"/>
+  <path d="M55 130 Q70 90 85 130 Q100 85 115 130 Q130 88 145 130" fill="none" stroke="#e9c46a" stroke-width="8" stroke-linecap="round"/>
+  <path d="M60 120 Q78 80 92 118 Q108 78 122 118 Q136 82 150 120" fill="none" stroke="#f4a261" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="88" cy="108" r="6" fill="#c1121f"/>
+  <circle cx="118" cy="105" r="5" fill="#c1121f"/>
+  <path d="M70 75 L85 95 L100 70 L115 95 L130 75" fill="#2a9d8f"/>
+</svg>

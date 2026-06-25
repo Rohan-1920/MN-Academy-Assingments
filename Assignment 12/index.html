@@ -3,28 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Saffron Kitchen — Fresh food, warm atmosphere, and unforgettable flavors." />
-  <title>Saffron Kitchen | Restaurant</title>
+  <meta name="description" content="Bistro Verde — Farm-fresh flavors, golden hospitality, and modern dining in Karachi." />
+  <title>Bistro Verde | Restaurant &amp; Cafe</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- ==================== TOP UTILITY BAR ==================== -->
+  <div class="utility-bar">
+    <div class="container utility-bar__inner">
+      <a href="mailto:hello@bistroverde.pk" class="utility-bar__link">
+        <span class="utility-bar__icon" aria-hidden="true">✉</span>
+        hello@bistroverde.pk
+      </a>
+      <span class="utility-bar__divider" aria-hidden="true">|</span>
+      <a href="tel:+923001234567" class="utility-bar__link">
+        <span class="utility-bar__icon" aria-hidden="true">☎</span>
+        +92 300 123 4567
+      </a>
+      <span class="utility-bar__hours">Open daily · 11 AM – 11 PM</span>
+    </div>
+  </div>
 
   <!-- ==================== NAVBAR ==================== -->
   <header class="navbar">
     <div class="container navbar__inner">
       <a href="#home" class="navbar__logo">
-        <span class="navbar__icon" aria-hidden="true">🍽️</span>
-        Saffron Kitchen
+        <span class="navbar__logo-mark" aria-hidden="true">BV</span>
+        Bistro Verde
       </a>
 
       <nav class="navbar__nav" aria-label="Main navigation">
         <ul class="navbar__menu">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#menu">Menu</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" class="navbar__link navbar__link--active">Home</a></li>
+          <li><a href="#menu" class="navbar__link">Menu</a></li>
+          <li><a href="#login" class="navbar__link">Sign In</a></li>
+          <li><a href="#signup" class="navbar__link navbar__link--cta">Sign Up</a></li>
         </ul>
       </nav>
     </div>
@@ -33,20 +50,20 @@
   <main>
 
     <!-- ==================== HERO ==================== -->
-    <section id="home" class="hero">
-      <div class="container hero__inner">
-        <div class="hero__content">
-          <p class="hero__tagline">Welcome to</p>
-          <h1 class="hero__title">Taste the Magic of <span>Homemade</span> Flavors</h1>
-          <p class="hero__text">
-            Fresh ingredients, authentic recipes, and a cozy dining experience.
-            Discover our chef's special dishes made with love every day.
-          </p>
-          <a href="#menu" class="btn btn--primary">View Our Menu</a>
-        </div>
-
-        <div class="hero__image">
-          <img src="images/hero-food.svg" alt="A colorful platter of restaurant food" />
+    <section id="home" class="hero" aria-label="Welcome banner">
+      <div class="hero__bg" role="img" aria-label="Elegant restaurant table setting"></div>
+      <div class="hero__overlay"></div>
+      <div class="container hero__content">
+        <p class="hero__eyebrow">Farm to Table · Karachi</p>
+        <h1 class="hero__title">Where Every Meal Feels <span>Golden</span></h1>
+        <p class="hero__text">
+          Bistro Verde brings together seasonal ingredients, bold global flavors,
+          and warm hospitality. From wood-fired pizzas to artisan desserts —
+          dine in, take away, or order delivery across the city.
+        </p>
+        <div class="hero__actions">
+          <a href="#menu" class="btn btn--accent">Explore Menu</a>
+          <a href="#login" class="btn btn--outline">Reserve a Table</a>
         </div>
       </div>
     </section>
@@ -54,114 +71,424 @@
     <!-- ==================== MENU ==================== -->
     <section id="menu" class="menu">
       <div class="container">
+
+        <blockquote class="menu__quote">
+          <p>"People who love to eat are always the best people."</p>
+          <cite>— Julia Child</cite>
+        </blockquote>
+
         <header class="section-header">
-          <p class="section-header__tag">Our Specialties</p>
-          <h2 class="section-header__title">Menu</h2>
+          <p class="section-header__tag">Chef's Selection</p>
+          <h2 class="section-header__title">Our Menu</h2>
           <p class="section-header__text">
-            Hand-picked dishes prepared fresh daily. Prices in PKR.
+            Handcrafted dishes made with locally sourced produce. Filter by category to explore our offerings.
           </p>
         </header>
 
-        <div class="menu__grid">
+        <div class="menu-filter-wrap">
+          <input type="radio" name="menu-filter" id="filter-all" class="menu-filters__input" checked />
+          <input type="radio" name="menu-filter" id="filter-food" class="menu-filters__input" />
+          <input type="radio" name="menu-filter" id="filter-drinks" class="menu-filters__input" />
+          <input type="radio" name="menu-filter" id="filter-sweets" class="menu-filters__input" />
 
-          <article class="menu-card">
-            <img src="images/pizza.svg" alt="Margherita Pizza" class="menu-card__img" />
+          <nav class="menu-filters" aria-label="Menu categories">
+            <label for="filter-all" class="menu-filters__pill">All</label>
+            <label for="filter-food" class="menu-filters__pill">Food</label>
+            <label for="filter-drinks" class="menu-filters__pill">Drinks</label>
+            <label for="filter-sweets" class="menu-filters__pill">Sweets</label>
+          </nav>
+
+          <div class="menu__grid">
+
+          <!-- FOOD -->
+          <article class="menu-card menu-card--food">
+            <div class="menu-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=420&fit=crop&q=80"
+                alt="Gourmet beef burger with melted cheese and fresh vegetables"
+                class="menu-card__img"
+                loading="lazy"
+              />
+              <span class="menu-card__badge">Bestseller</span>
+            </div>
             <div class="menu-card__body">
-              <h3 class="menu-card__title">Margherita Pizza</h3>
-              <p class="menu-card__desc">Classic tomato sauce, mozzarella, and fresh basil on a crispy crust.</p>
-              <p class="menu-card__price">Rs. 1,200</p>
+              <h3 class="menu-card__title">Verde Signature Burger</h3>
+              <p class="menu-card__desc">Grass-fed patty, aged cheddar, caramelized onions, and herb aioli on brioche.</p>
+              <span class="menu-card__price">Rs 1,250</span>
             </div>
           </article>
 
-          <article class="menu-card">
-            <img src="images/burger.svg" alt="Classic Beef Burger" class="menu-card__img" />
+          <article class="menu-card menu-card--food">
+            <div class="menu-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600&h=420&fit=crop&q=80"
+                alt="Fresh margherita pizza with basil leaves"
+                class="menu-card__img"
+                loading="lazy"
+              />
+            </div>
             <div class="menu-card__body">
-              <h3 class="menu-card__title">Classic Beef Burger</h3>
-              <p class="menu-card__desc">Juicy beef patty with lettuce, cheese, and our signature sauce.</p>
-              <p class="menu-card__price">Rs. 850</p>
+              <h3 class="menu-card__title">Wood-Fired Margherita</h3>
+              <p class="menu-card__desc">San Marzano tomatoes, buffalo mozzarella, and garden basil on sourdough crust.</p>
+              <span class="menu-card__price">Rs 1,100</span>
             </div>
           </article>
 
-          <article class="menu-card">
-            <img src="images/pasta.svg" alt="Creamy Alfredo Pasta" class="menu-card__img" />
+          <article class="menu-card menu-card--food">
+            <div class="menu-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600&h=420&fit=crop&q=80"
+                alt="Creamy penne pasta with parmesan"
+                class="menu-card__img"
+                loading="lazy"
+              />
+            </div>
             <div class="menu-card__body">
-              <h3 class="menu-card__title">Creamy Alfredo Pasta</h3>
-              <p class="menu-card__desc">Penne pasta in rich parmesan cream sauce with herbs.</p>
-              <p class="menu-card__price">Rs. 950</p>
+              <h3 class="menu-card__title">Truffle Penne Alfredo</h3>
+              <p class="menu-card__desc">Silky parmesan cream, black truffle oil, and freshly cracked pepper.</p>
+              <span class="menu-card__price">Rs 950</span>
             </div>
           </article>
 
-          <article class="menu-card">
-            <img src="images/salad.svg" alt="Garden Fresh Salad" class="menu-card__img" />
+          <article class="menu-card menu-card--food">
+            <div class="menu-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600&h=420&fit=crop&q=80"
+                alt="Colorful garden salad bowl"
+                class="menu-card__img"
+                loading="lazy"
+              />
+            </div>
             <div class="menu-card__body">
-              <h3 class="menu-card__title">Garden Fresh Salad</h3>
-              <p class="menu-card__desc">Mixed greens, cherry tomatoes, cucumber, and lemon dressing.</p>
-              <p class="menu-card__price">Rs. 550</p>
+              <h3 class="menu-card__title">Garden Harvest Salad</h3>
+              <p class="menu-card__desc">Mixed greens, roasted beets, goat cheese, walnuts, and citrus vinaigrette.</p>
+              <span class="menu-card__price">Rs 750</span>
             </div>
           </article>
 
-          <article class="menu-card">
-            <img src="images/dessert.svg" alt="Chocolate Lava Cake" class="menu-card__img" />
+          <article class="menu-card menu-card--food">
+            <div class="menu-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1553621042-f6e147245754?w=600&h=420&fit=crop&q=80"
+                alt="Assorted sushi rolls on a wooden board"
+                class="menu-card__img"
+                loading="lazy"
+              />
+              <span class="menu-card__badge menu-card__badge--new">New</span>
+            </div>
             <div class="menu-card__body">
-              <h3 class="menu-card__title">Chocolate Lava Cake</h3>
-              <p class="menu-card__desc">Warm chocolate cake with a molten center, served with vanilla ice cream.</p>
-              <p class="menu-card__price">Rs. 650</p>
+              <h3 class="menu-card__title">Pacific Sushi Platter</h3>
+              <p class="menu-card__desc">Chef's selection of nigiri and maki with wasabi, ginger, and soy glaze.</p>
+              <span class="menu-card__price">Rs 1,450</span>
             </div>
           </article>
 
-          <article class="menu-card">
-            <img src="images/drink.svg" alt="Fresh Mango Smoothie" class="menu-card__img" />
+          <article class="menu-card menu-card--food">
+            <div class="menu-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?w=600&h=420&fit=crop&q=80"
+                alt="Grilled steak with herbs and vegetables"
+                class="menu-card__img"
+                loading="lazy"
+              />
+            </div>
             <div class="menu-card__body">
-              <h3 class="menu-card__title">Fresh Mango Smoothie</h3>
-              <p class="menu-card__desc">Blended ripe mangoes with yogurt and a touch of honey.</p>
-              <p class="menu-card__price">Rs. 400</p>
+              <h3 class="menu-card__title">Herb-Crusted Ribeye</h3>
+              <p class="menu-card__desc">12 oz ribeye with rosemary butter, roasted garlic mash, and seasonal veg.</p>
+              <span class="menu-card__price">Rs 2,200</span>
+            </div>
+          </article>
+
+          <article class="menu-card menu-card--food">
+            <div class="menu-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&h=420&fit=crop&q=80"
+                alt="Street-style tacos with lime and salsa"
+                class="menu-card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Street Tacos Trio</h3>
+              <p class="menu-card__desc">Slow-braised beef, pickled onion, cilantro crema, and house salsa verde.</p>
+              <span class="menu-card__price">Rs 850</span>
+            </div>
+          </article>
+
+          <article class="menu-card menu-card--food">
+            <div class="menu-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1476124369491-e7addf5db371?w=600&h=420&fit=crop&q=80"
+                alt="Creamy mushroom risotto in a bowl"
+                class="menu-card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Wild Mushroom Risotto</h3>
+              <p class="menu-card__desc">Arborio rice, porcini, shiitake, white wine, and finished with pecorino.</p>
+              <span class="menu-card__price">Rs 1,050</span>
+            </div>
+          </article>
+
+          <!-- DRINKS -->
+          <article class="menu-card menu-card--drinks">
+            <div class="menu-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1553530666-ba11a7da3888?w=600&h=420&fit=crop&q=80"
+                alt="Fresh berry smoothie in a glass"
+                class="menu-card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Berry Bliss Smoothie</h3>
+              <p class="menu-card__desc">Mixed berries, Greek yogurt, honey, and almond milk blended to perfection.</p>
+              <span class="menu-card__price">Rs 450</span>
+            </div>
+          </article>
+
+          <article class="menu-card menu-card--drinks">
+            <div class="menu-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&h=420&fit=crop&q=80"
+                alt="Latte art coffee in a ceramic cup"
+                class="menu-card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Artisan Latte</h3>
+              <p class="menu-card__desc">Single-origin espresso with steamed oat milk and delicate rosetta art.</p>
+              <span class="menu-card__price">Rs 380</span>
+            </div>
+          </article>
+
+          <article class="menu-card menu-card--drinks">
+            <div class="menu-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=600&h=420&fit=crop&q=80"
+                alt="Refreshing lemonade with mint and ice"
+                class="menu-card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Mint Citrus Cooler</h3>
+              <p class="menu-card__desc">Fresh lemon, lime, garden mint, and sparkling water over crushed ice.</p>
+              <span class="menu-card__price">Rs 320</span>
+            </div>
+          </article>
+
+          <!-- SWEETS -->
+          <article class="menu-card menu-card--sweets">
+            <div class="menu-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&h=420&fit=crop&q=80"
+                alt="Rich chocolate layer cake slice"
+                class="menu-card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Dark Chocolate Torte</h3>
+              <p class="menu-card__desc">70% Belgian chocolate ganache with gold-dusted raspberry coulis.</p>
+              <span class="menu-card__price">Rs 650</span>
+            </div>
+          </article>
+
+          <article class="menu-card menu-card--sweets">
+            <div class="menu-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=600&h=420&fit=crop&q=80"
+                alt="Colorful ice cream sundae with toppings"
+                class="menu-card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Golden Sundae</h3>
+              <p class="menu-card__desc">Vanilla bean ice cream, caramel drizzle, toasted almonds, and cherry.</p>
+              <span class="menu-card__price">Rs 550</span>
+            </div>
+          </article>
+
+          <article class="menu-card menu-card--sweets">
+            <div class="menu-card__image-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1551024506-0bccd828d307?w=600&h=420&fit=crop&q=80"
+                alt="Berry cheesecake slice on a plate"
+                class="menu-card__img"
+                loading="lazy"
+              />
+            </div>
+            <div class="menu-card__body">
+              <h3 class="menu-card__title">Berry Cheesecake</h3>
+              <p class="menu-card__desc">Creamy New York-style base topped with seasonal berry compote.</p>
+              <span class="menu-card__price">Rs 700</span>
             </div>
           </article>
 
         </div>
-      </div>
-    </section>
-
-    <!-- ==================== CONTACT ==================== -->
-    <section id="contact" class="contact">
-      <div class="container contact__inner">
-        <header class="section-header section-header--light">
-          <p class="section-header__tag">Get in Touch</p>
-          <h2 class="section-header__title">Contact Us</h2>
-          <p class="section-header__text">
-            Have a question or want to book a table? Send us a message.
-          </p>
-        </header>
-
-        <form class="contact-form" action="#" method="post">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" required />
-          </div>
-
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required />
-          </div>
-
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
-        </form>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ==================== FOOTER ==================== -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <p class="footer__brand">🍽️ Saffron Kitchen</p>
-      <p class="footer__text">123 Food Street, Karachi &bull; Open Daily 11 AM – 11 PM</p>
-      <p class="footer__copy">&copy; 2026 Saffron Kitchen. Assignment 12 — MN Tech Academy.</p>
+  <!-- ==================== FOOTER / AUTH ==================== -->
+  <footer id="auth" class="footer">
+    <div class="container footer__main">
+      <div class="footer__info">
+        <a href="#home" class="footer__brand">Bistro Verde</a>
+        <p class="footer__tagline">Serving golden moments since 2019.</p>
+
+        <nav aria-label="Footer navigation">
+          <ul class="footer__nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#login">Sign In</a></li>
+            <li><a href="#signup">Sign Up</a></li>
+            <li><a href="mailto:hello@bistroverde.pk">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__social" aria-label="Social media links">
+          <a href="#" class="footer__social-link" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.15-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+          <a href="https://wa.me/923001234567" class="footer__social-link" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__form-wrap auth-section">
+        <nav class="auth-tabs" aria-label="Account options">
+          <a href="#login" class="auth-tabs__link">Sign In</a>
+          <a href="#signup" class="auth-tabs__link">Sign Up</a>
+        </nav>
+
+        <!-- Login panel -->
+        <div id="login" class="auth-panel auth-panel--login">
+          <h2 class="footer__form-title">Sign In</h2>
+          <p class="footer__form-subtitle">Welcome back! Sign in to track orders and save your favorites.</p>
+
+          <form class="auth-form" action="#login-success" method="get">
+            <div class="form-group">
+              <label for="signin-email">Email Address</label>
+              <input type="email" id="signin-email" name="email" placeholder="you@example.com" autocomplete="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="signin-password">Password</label>
+              <input type="password" id="signin-password" name="password" placeholder="Enter your password" autocomplete="current-password" minlength="6" required />
+            </div>
+
+            <div class="auth-form__options">
+              <label class="auth-form__remember">
+                <input type="checkbox" name="remember" />
+                Remember me
+              </label>
+              <a href="#forgot-password" class="auth-form__forgot">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn btn--accent btn--full">Sign In</button>
+          </form>
+
+          <p class="auth-form__switch">New here? <a href="#signup">Create an account</a></p>
+        </div>
+
+        <!-- Sign up panel -->
+        <div id="signup" class="auth-panel auth-panel--signup">
+          <h2 class="footer__form-title">Sign Up</h2>
+          <p class="footer__form-subtitle">Join Bistro Verde to order faster and unlock member rewards.</p>
+
+          <form class="auth-form" action="#signup-success" method="get">
+            <div class="form-group">
+              <label for="signup-name">Full Name</label>
+              <input type="text" id="signup-name" name="name" placeholder="Your full name" autocomplete="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="signup-email">Email Address</label>
+              <input type="email" id="signup-email" name="email" placeholder="you@example.com" autocomplete="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="signup-password">Password</label>
+              <input type="password" id="signup-password" name="password" placeholder="Create a password (min. 6 characters)" autocomplete="new-password" minlength="6" required />
+            </div>
+
+            <div class="form-group">
+              <label for="signup-confirm">Confirm Password</label>
+              <input type="password" id="signup-confirm" name="confirm_password" placeholder="Re-enter your password" autocomplete="new-password" minlength="6" required />
+            </div>
+
+            <button type="submit" class="btn btn--accent btn--full">Create Account</button>
+          </form>
+
+          <p class="auth-form__switch">Already have an account? <a href="#login">Sign in here</a></p>
+        </div>
+
+        <!-- Forgot password panel -->
+        <div id="forgot-password" class="auth-panel auth-panel--forgot">
+          <h2 class="footer__form-title">Reset Password</h2>
+          <p class="footer__form-subtitle">Enter your email and we will send you a reset link.</p>
+
+          <form class="auth-form" action="#forgot-success" method="get">
+            <div class="form-group">
+              <label for="forgot-email">Email Address</label>
+              <input type="email" id="forgot-email" name="email" placeholder="you@example.com" autocomplete="email" required />
+            </div>
+
+            <button type="submit" class="btn btn--accent btn--full">Send Reset Link</button>
+          </form>
+
+          <p class="auth-form__switch"><a href="#login">Back to Sign In</a></p>
+        </div>
+
+        <!-- Success messages -->
+        <div id="login-success" class="auth-panel auth-panel--success">
+          <div class="form-success">
+            <p class="form-success__icon" aria-hidden="true">✓</p>
+            <h2 class="footer__form-title">Welcome Back!</h2>
+            <p class="footer__form-subtitle">You have signed in successfully. Enjoy your next visit to Bistro Verde.</p>
+            <a href="#menu" class="btn btn--accent btn--full">Browse Menu</a>
+            <p class="auth-form__switch"><a href="#login">Sign in again</a></p>
+          </div>
+        </div>
+
+        <div id="signup-success" class="auth-panel auth-panel--success">
+          <div class="form-success">
+            <p class="form-success__icon" aria-hidden="true">✓</p>
+            <h2 class="footer__form-title">Account Created!</h2>
+            <p class="footer__form-subtitle">Thank you for joining Bistro Verde. Your account is ready to use.</p>
+            <a href="#login" class="btn btn--accent btn--full">Sign In Now</a>
+          </div>
+        </div>
+
+        <div id="forgot-success" class="auth-panel auth-panel--success">
+          <div class="form-success">
+            <p class="form-success__icon" aria-hidden="true">✓</p>
+            <h2 class="footer__form-title">Check Your Email</h2>
+            <p class="footer__form-subtitle">If an account exists for that address, a password reset link is on its way.</p>
+            <a href="#login" class="btn btn--accent btn--full">Back to Sign In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container">
+        <p>&copy; 2026 Bistro Verde. All rights reserved. | Assignment 12 — MN Tech Academy</p>
+      </div>
     </div>
   </footer>
 
